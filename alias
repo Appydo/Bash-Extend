@@ -6,10 +6,15 @@ alias .....='cd ../../../../'
 alias .3='cd ../../../'
 alias .4='cd ../../../../'
 alias .5='cd ../../../../..'
+## install with apt-get ##
 alias aptu='aptitude update;aptitude upgrade;'
-alias update='aptitude update;aptitude upgrade;'
+alias update='apt-get update && apt-get upgrade'
+alias updatey='apt-get --yes update && apt-get --yes upgrade'
 alias apti='aptitude install'
 alias apts='apt-cache search'
+## distrp specifc RHEL/CentOS ##
+alias update='yum update'
+alias updatey='yum -y update'
 alias ll='ls -lv --group-directories-first'
 alias ls='ls -h --color'
 alias home='cd ~'
@@ -25,12 +30,24 @@ alias l="ls"
 alias s="ls"
 alias c='clear'
 alias df='df -H'
-alias mkdir='mkdir -p'
+alias mkdir='mkdir -pv'
 alias h='history'
 alias j='jobs -l'
 alias list_screen='screen -ls'
 ## Show hidden files ##
 alias l.='ls -d .* --color=auto'
+## Generate sha1 digest ##
+alias sha1='openssl sha1'
+## Do not wait interval 1 second, go fast ##
+alias fastping='ping -c 100 -s.2'
+## Control web servers ##
+alias nginxreload='sudo /usr/local/nginx/sbin/nginx -s reload'
+alias nginxtest='sudo /usr/local/nginx/sbin/nginx -t'
+alias lightyload='sudo /etc/init.d/lighttpd reload'
+alias lightytest='sudo /usr/sbin/lighttpd -f /etc/lighttpd/lighttpd.conf -t'
+alias httpdreload='sudo /usr/sbin/apachectl -k graceful'
+alias httpdtest='sudo /usr/sbin/apachectl -t && /usr/sbin/apachectl -t -D DUMP_VHOSTS'
+
 #-----------
 # Searching:
 #-----------
