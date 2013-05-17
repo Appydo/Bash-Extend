@@ -1,6 +1,11 @@
 alias cd..='cd ..'
 alias ..='cd ..;ls'
 alias ...='cd ../..'
+alias ....='cd ../../../../'
+alias .....='cd ../../../../'
+alias .3='cd ../../../'
+alias .4='cd ../../../../'
+alias .5='cd ../../../../..'
 alias aptu='aptitude update;aptitude upgrade;'
 alias update='aptitude update;aptitude upgrade;'
 alias apti='aptitude install'
@@ -24,6 +29,8 @@ alias mkdir='mkdir -p'
 alias h='history'
 alias j='jobs -l'
 alias list_screen='screen -ls'
+## Show hidden files ##
+alias l.='ls -d .* --color=auto'
 #-----------
 # Searching:
 #-----------
