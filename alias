@@ -40,6 +40,16 @@ alias l.='ls -d .* --color=auto'
 alias sha1='openssl sha1'
 ## Do not wait interval 1 second, go fast ##
 alias fastping='ping -c 100 -s.2'
+## pass options to free ## 
+alias meminfo='free -m -l -t'
+## get top process eating memory
+alias psmem='ps auxf | sort -nr -k 4'
+alias psmem10='ps auxf | sort -nr -k 4 | head -10'
+## get top process eating cpu ##
+alias pscpu='ps auxf | sort -nr -k 3'
+alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
+## Get server cpu info ##
+alias cpuinfo='lscpu'
 ## Control web servers ##
 alias nginxreload='sudo /usr/local/nginx/sbin/nginx -s reload'
 alias nginxtest='sudo /usr/local/nginx/sbin/nginx -t'
