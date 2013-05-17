@@ -57,6 +57,20 @@ alias lightyload='sudo /etc/init.d/lighttpd reload'
 alias lightytest='sudo /usr/sbin/lighttpd -f /etc/lighttpd/lighttpd.conf -t'
 alias httpdreload='sudo /usr/sbin/apachectl -k graceful'
 alias httpdtest='sudo /usr/sbin/apachectl -t && /usr/sbin/apachectl -t -D DUMP_VHOSTS'
+alias wget='wget -c'
+## GIT ##
+alias gs='git status '
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit'
+alias gd='git diff'
+alias go='git checkout '
+alias gk='gitk --all&'
+alias gx='gitx --all'
+function commit {
+    git commit -m "`echo "$*" | sed -e 's/^./\U&\E/g'`"
+}
+alias gco=commit; 
 
 #-----------
 # Searching:
