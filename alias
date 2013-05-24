@@ -13,8 +13,8 @@ alias updatey='apt-get --yes update && apt-get --yes upgrade'
 alias apti='aptitude install'
 alias apts='apt-cache search'
 ## distrp specifc RHEL/CentOS ##
-alias update='yum update'
-alias updatey='yum -y update'
+# alias update='yum update'
+# alias updatey='yum -y update'
 alias ll='ls -lv --group-directories-first'
 alias ls='ls -h --color'
 alias home='cd ~'
@@ -75,6 +75,8 @@ alias gco=commit;
 #-----------
 # Searching:
 #-----------
+# largefile: top 10 largest file
+largefile() { du -a $@ | sort -n -r | head -n 10 }
 # ff:  to find a file under the current directory
 ff () { /usr/bin/find . -name "$@" ; }
 # ffs: to find a file whose name starts with a given string
