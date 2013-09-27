@@ -1,4 +1,4 @@
-Bash Extend
+    Bash Extend
 ======
 
 Sample alias for extend bashrc
@@ -23,12 +23,12 @@ Remove
 EXAMPLE
 -------
 
-aptu    = aptitude update;aptitude upgrade;
-updatey = apt-get --yes update && apt-get --yes upgrade
-...     = cd ../..
-ll      = ls -lv --group-directories-first
-l       = ls
-home    = cd ~
-755     = chmod 755
-sha1    = openssl sha1
-meminfo = free -m -l -t
+    aptu    = aptitude update;aptitude upgrade;
+    updatey = apt-get --yes update && apt-get --yes upgrade
+    ...     = cd ../..
+    ll      = ls -lv --group-directories-first
+    l       = ls
+    home    = cd ~
+    755     = chmod 755
+    sha1    = openssl sha1
+    meminfo = free -m -l -t
