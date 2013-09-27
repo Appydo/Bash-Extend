@@ -122,5 +122,5 @@ extract () {
     echo "'$1' is not a valid file"
   fi
 }
-alias update_bashrc_extend = "wget https://raw.github.com/Appydo/bashrc/master/alias -o /etc/bash.bashrc_extend;source /etc/bash.bashrc;"
-alias remove_bashrc_extend = "sed -i '/\. \/etc\/bash.bashrc_extend/d' /etc/bash.bashrc;rm /etc/bash.bashrc_extend"
+alias update_bashrc_extend="wget https://raw.github.com/Appydo/bashrc/master/alias -O /etc/bash.bashrc_extend;source /etc/bash.bashrc;"
+alias remove_bashrc_extend="sed -i '/\. \/etc\/bash.bashrc_extend/d' /etc/bash.bashrc;rm /etc/bash.bashrc_extend"
