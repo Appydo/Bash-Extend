@@ -1,7 +1,7 @@
-    Bash Extend
+Bash Extend
 ======
 
-Sample alias for extend bashrc
+Sample alias for extend bashrc and saving your time.
 
 
 INSTALL
