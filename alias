@@ -10,7 +10,7 @@ alias .5='cd ../../../../..'
 alias aptu='apt-get update;apt-get upgrade;'
 alias update='apt-get update && apt-get upgrade'
 alias updatey='apt-get --yes update && apt-get --yes upgrade'
-alias apti='aptitude install'
+alias apti='apt-get install'
 alias apts='apt-cache search'
 ## distrp specifc RHEL/CentOS ##
 # alias update='yum update'
