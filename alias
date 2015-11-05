@@ -7,7 +7,7 @@ alias .3='cd ../../../'
 alias .4='cd ../../../../'
 alias .5='cd ../../../../..'
 ## install with apt-get ##
-alias aptu='aptitude update;aptitude upgrade;'
+alias aptu='apt-get update;apt-get upgrade;'
 alias update='apt-get update && apt-get upgrade'
 alias updatey='apt-get --yes update && apt-get --yes upgrade'
 alias apti='aptitude install'
